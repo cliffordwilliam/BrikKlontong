@@ -86,7 +86,7 @@ module.exports = class UserController {
       const obj = await Product.findAll(options);
       // res
       res.status(200).json({
-        message: "Chat Rooms successfully retrieved.",
+        message: "Products successfully retrieved.",
         obj,
         total,
       });
@@ -181,7 +181,7 @@ module.exports = class UserController {
       );
       // res
       res.status(200).json({
-        message: "Product image url successfully updated.",
+        message: "Product image successfully updated.",
         image,
       });
     } catch (error) {
