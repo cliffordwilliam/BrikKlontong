@@ -3,9 +3,9 @@ const { User } = require("./models/index.js");
 
 module.exports = class Middleware {
   static error(err, req, res, next) {
-    if (process.env.NODE_ENV !== "production") {
-      console.log(err);
-    }
+    // if (process.env.NODE_ENV !== "production") {
+    //   console.log(err);
+    // }
     switch (err.name) {
       case "SequelizeValidationError":
       case "SequelizeUniqueConstraintError":
