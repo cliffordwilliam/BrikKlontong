@@ -1,5 +1,10 @@
 {
   "development": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "protocol": "postgres"
+  },
+  "development2": {
     "username": "postgres",
     "password": "postgres",
     "database": "brik_klontong_development",

@@ -15,7 +15,7 @@ module.exports = {
         width: faker.datatype.number({ min: 1, max: 10 }),
         length: faker.datatype.number({ min: 1, max: 10 }),
         height: faker.datatype.number({ min: 1, max: 10 }),
-        image: faker.image.imageUrl(),
+        image: `https://picsum.photos/id/${i}/200/300`,
         harga: faker.datatype.number({ min: 1000, max: 10000 }),
         createdAt: new Date(),
         updatedAt: new Date(),
